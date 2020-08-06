@@ -1,0 +1,47 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center ion-no-padding">
+      Тестирование
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="light" class="ion-padding">
+  <ion-text>
+    <ion-label>
+      <h2>
+        Вводный курс для муниципальных коордиеаторов программ наставничества молодежи в ТСЖ
+      </h2>
+    </ion-label>
+    <p>Концепция наставничества</p>
+  </ion-text>
+
+  <div class="question">
+    <ion-item>
+      <ion-badge>Вопрос 1</ion-badge>
+      <ion-label slot="end" class="question__request">
+        <ion-text>
+          <p>
+            <small>Напишите свой вариант ответа</small>
+          </p>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-text>
+      <p class="ion-padding-horizontal">
+        <small>Сформулируйте еще 1-2 обязательныз признака наставника, о которых не сказано в онлайн-консультации.</small>
+      </p>
+    </ion-text>
+    <ion-item>
+      <ion-input placeholder="123"></ion-input>
+    </ion-item>
+  </div>
+  <ion-button routerLink="/menu" class="ion-padding-horizontal" expand="block" shape="round">
+    Отправить на проверку
+  </ion-button>
+</ion-content>

@@ -1,0 +1,51 @@
+ion-grid {
+	padding: 0;
+}
+
+ion-button, ion-grid {
+	outline: none
+}
+
+.cell {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.headCell {
+	background: #eeeeee;
+	padding: 10px 0;
+}
+
+.sunday {
+	color: #bbb
+}
+
+.bgrIcon {
+	background: #3880ff;
+}
+
+.grayItem {
+	background: #eee;
+	margin-bottom: 2px;
+}
+
+.calendarCell {
+	border-top: 2px solid #bbb;
+	padding: 20px 5px;
+}
+
+.cellMark {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 28px;
+	width: 28px;
+	border-radius: 50%;
+	background: #7c1818;
+	color: #fff;
+}
+
+.cellToday {
+	background: #eee;
+}

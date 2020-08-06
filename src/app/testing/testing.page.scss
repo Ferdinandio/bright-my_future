@@ -1,0 +1,18 @@
+.question {
+	margin: 20px 0;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 280px;
+	min-height: 190px;
+	background: #fff;
+}
+
+.question__request {
+	margin: 0;
+	padding-left: 90px;
+	white-space: pre-wrap;
+}
+
+ion-button {
+	outline: none;
+}

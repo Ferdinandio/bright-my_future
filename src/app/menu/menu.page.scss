@@ -1,0 +1,26 @@
+.flexWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+p {
+	white-space: pre-wrap;
+}
+
+ion-button {
+	outline: none;
+}
+
+ion-select {
+	overflow: hidden;
+	background: #3880ff;
+	color: white;
+	border-radius: 5px;
+	margin: 0 0 0 20px;
+	padding-left: 10px;
+}
+
+ion-select::part(icon) {
+	display: none;
+}

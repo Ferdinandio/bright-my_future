@@ -1,0 +1,64 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center ion-no-padding">
+      Ментор тестовый
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="flexWrapper">
+    <ion-grid class="gridMessages">
+      <ion-row>
+        <ion-col>
+          <ion-text>
+            <div class="date">17.06.2020</div>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col offset="6" size="4">
+          <div class="message">
+            <div class="message__text">Привет</div>
+            <div class="message__date"><small>16.54.10</small></div>
+          </div>
+        </ion-col>
+        <ion-col size="2">
+          <ion-avatar>
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid class="gridMessages">
+      <ion-row>
+        <ion-col size="2">
+          <ion-avatar>
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="4">
+          <div class="message">
+            <div class="message__text">Тест</div>
+            <div class="message__date"><small>16.54.20</small></div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-textarea rows="1" placeholder="Сообщение..."></ion-textarea>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon size="large" name="arrow-redo-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

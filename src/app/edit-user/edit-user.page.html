@@ -1,0 +1,105 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center ion-no-padding">
+      Заполните свои данные
+    </ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked" color="medium">Фамиилия</ion-label>
+        <ion-input>Классен</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked" color="medium">Имя</ion-label>
+        <ion-input>Дмитрий</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked" color="medium">Отчество</ion-label>
+        <ion-input>Петрович</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked" color="medium">E-mail</ion-label>
+        <ion-input type="email">d@yandex.ru</ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked" color="medium">Телефон</ion-label>
+        <ion-input type="tel">+7(929) 717-63-02</ion-input>
+      </ion-item>
+
+      <ion-item routerLink="federal">
+        <ion-text color="medium">
+          <p>Город</p>
+          <div style="color: black;">
+            Самарская область
+          </div>
+        </ion-text>
+      </ion-item>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="stacked" color="medium">Пол</ion-label>
+              <ion-select value="male">
+                  <ion-select-option value="male">Мужской</ion-select-option>
+                  <ion-select-option value="female">Женский</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label position="stacked" color="medium">Возраст</ion-label>
+              <ion-input min="14" inputmode="numeric" value="14" type="number"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button>
+            <ion-icon size="small" name="cloud-download"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <ion-icon name="create"></ion-icon>
+        </ion-buttons>
+
+        <ion-title size="small">8FJG5HJD.JH57.KLS8.893GVEK</ion-title>
+        <ion-text>
+          <p>
+            1756 Кб
+          </p>
+        </ion-text>
+      </ion-toolbar>
+      
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-button>
+            <ion-icon size="small" name="cloud-download"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+
+        <ion-title size="small">Загрузить документ</ion-title>
+      </ion-toolbar>
+
+      <ion-avatar class="avatar">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        <ion-icon class="createIcon" size="small" name="create"></ion-icon>
+      </ion-avatar>
+      <ion-button class="ion-no-padding" shape="round" expand="block" class="ion-padding">Отправить</ion-button>
+    </ion-list>
+  </form>
+</ion-content>

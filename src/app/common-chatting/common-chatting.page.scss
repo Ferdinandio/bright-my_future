@@ -1,0 +1,37 @@
+ion-title {
+	padding: 0 30px;
+}
+
+ion-textarea {
+	margin: 5px 0 5px 5px;
+	background: #eee;
+	border-radius: 25px;
+	padding-left: 8px;
+}
+
+.flexWrapper {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+}
+
+.date {
+	text-align: center;
+}
+
+.message {
+	background-color: #add;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.gridMessages {
+	min-width: 100%;
+	margin-top: auto;
+	margin-bottom: 0;
+}
+
+ion-button {
+	outline: none;
+}

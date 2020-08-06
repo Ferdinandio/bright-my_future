@@ -1,0 +1,47 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title routerLink="/choose-contact" class="ion-text-center ion-no-padding">
+      Чат
+    </ion-title>
+    
+    <ion-buttons slot="start">
+      <ion-button routerLink="/menu">
+        <ion-icon color="dark" size="large" name="reorder-three-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item routerLink="chatting">
+    <ion-avatar>
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label class="ion-padding-horizontal pre-wrap">
+      <div>Техподдержка 1</div>
+      <div style="font-size: x-small; 
+                  color:lightgray">Сервис</div>
+      <p>Вы: Добрый день</p>
+    </ion-label>
+    <ion-badge class="badge">
+      <div>17.06.2020</div>
+      <div>16.45.05</div>
+    </ion-badge>
+  </ion-item>
+  <ion-item routerLink="common-chatting">
+    <ion-avatar>
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label class="ion-padding-horizontal pre-wrap">
+      <div>Ментор тестовый</div>
+      <div style="font-size: x-small; 
+                  color:lightgray">Наставник</div>
+      <p>Тест</p>
+    </ion-label>
+    <ion-badge class="badge">
+      <div>17.06.2020</div>
+      <div>16.41.02</div>
+      <div class="dot"></div>
+    </ion-badge>
+  </ion-item>
+</ion-content>

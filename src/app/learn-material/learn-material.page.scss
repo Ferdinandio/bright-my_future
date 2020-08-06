@@ -1,0 +1,26 @@
+ion-img {
+	height: 100px;
+}
+
+ion-card {
+	position: relative;
+}
+
+.book {
+	width: 100%;
+}
+
+ion-badge {
+	position: absolute;
+	top: -1px;
+	right: 20px;
+	white-space: pre-wrap;
+	width: 60px;
+	border-radius: 0;
+	background: #fff;
+	color: #3880ff
+}
+
+ion-button, ion-card {
+	outline: none;
+}

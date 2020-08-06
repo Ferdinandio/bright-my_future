@@ -1,0 +1,7 @@
+{
+  "name": "myFuture",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

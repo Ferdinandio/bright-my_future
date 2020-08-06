@@ -1,0 +1,25 @@
+<ion-content>
+  <div class="logoWrapper">
+    <ion-img></ion-img>
+  </div>
+  <form onsubmit="processForm(event)">
+    <ion-item>
+      <ion-label class="formHeader">
+        <h2>Войдите или зарегистрируйтесь, чтобы продолжить</h2>
+      </ion-label>
+    </ion-item>
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-input type="email" placeholder="E-mail"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Пароль"></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-button routerLink="/menu" class="ion-no-padding" shape="round" expand="block" class="ion-padding">Войти<ion-icon class="iconBtn" slot="end" name="arrow-forward-outline"></ion-icon></ion-button>
+  <ion-button routerLink="/reg" expand="block" class="ion-padding" fill="clear">Зарегистрироваться</ion-button>
+</ion-footer>

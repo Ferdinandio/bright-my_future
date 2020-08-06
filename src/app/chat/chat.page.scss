@@ -1,0 +1,30 @@
+.badge {
+	padding: 0;
+	border-radius: 0;
+	color: #92949c;
+	background-color: white;
+	font-size: x-small;
+	margin: 10px 0 auto;
+	text-align: right;
+}
+
+.dot {
+	width: 5px;
+	height: 5px;
+	background: #a0253a;
+	border-radius: 50%;
+	float: right;
+	margin-top: 5px;
+}
+
+.pre-wrap {
+	white-space: pre-wrap;
+}
+
+ion-button {
+	outline: none;
+}
+
+ion-button, ion-card, ion-title {
+	outline: none;
+}
