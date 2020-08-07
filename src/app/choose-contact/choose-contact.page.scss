@@ -8,19 +8,7 @@
 	text-align: right;
 }
 
-.dot {
-	width: 5px;
-	height: 5px;
-	background: #a0253a;
-	border-radius: 50%;
-	float: right;
-	margin-top: 5px;
-}
-
-.pre-wrap {
-	white-space: pre-wrap;
-}
-
-ion-button, ion-card {
-	outline: none;
+.xsFont {
+	font-size: x-small;
+	color: lightgray;
 }

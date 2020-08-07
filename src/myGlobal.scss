@@ -1,9 +1,13 @@
-.smallFontSize {
-	font-size: small;
+.pre-wrap {
 	white-space: pre-wrap;
 }
 
-ion-button {
+.smallFont {
+	font-size: small;
+}
+
+ion-button, ion-card, ion-toolbar,
+ion-title, ion-grid, ion-row, ion-col {
 	outline: none;
 }
 

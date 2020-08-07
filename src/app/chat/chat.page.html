@@ -1,6 +1,6 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title routerLink="/choose-contact" class="ion-text-center ion-no-padding">
+    <ion-title class="ion-text-center ion-no-padding">
       Чат
     </ion-title>
     
@@ -12,16 +12,21 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
 <ion-content>
   <ion-item routerLink="chatting">
     <ion-avatar>
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
     </ion-avatar>
     <ion-label class="ion-padding-horizontal pre-wrap">
       <div>Техподдержка 1</div>
-      <div style="font-size: x-small; 
-                  color:lightgray">Сервис</div>
-      <p>Вы: Добрый день</p>
+      <div class="xsFont" color="medium">Сервис</div>
+      <p color="medium">Вы: Добрый день</p>
     </ion-label>
     <ion-badge class="badge">
       <div>17.06.2020</div>
@@ -30,18 +35,17 @@
   </ion-item>
   <ion-item routerLink="common-chatting">
     <ion-avatar>
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      <ion-img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"></ion-img>
     </ion-avatar>
     <ion-label class="ion-padding-horizontal pre-wrap">
       <div>Ментор тестовый</div>
-      <div style="font-size: x-small; 
-                  color:lightgray">Наставник</div>
+      <div class="xsFont" color="medium">Наставник</div>
       <p>Тест</p>
     </ion-label>
     <ion-badge class="badge">
       <div>17.06.2020</div>
       <div>16.41.02</div>
-      <div class="dot"></div>
+      <ion-icon class="dot" color="danger" name="ellipse-sharp"></ion-icon>
     </ion-badge>
   </ion-item>
 </ion-content>

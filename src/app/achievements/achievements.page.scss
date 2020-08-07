@@ -3,27 +3,13 @@
 	height: 30px;
 }
 
-.tabelBackgroundPlusMarginB {
+.tabelBackgroundPlusMarginBottom {
 	background: #eee;
 	margin-bottom: 5px;
 }
 
-.greenDot {
-	display: inline-block;
-	height: 5px;
-	width: 5px;
-	border-radius: 50%;
-	background: #1a921a;
-	margin: 0 2px 2px 0;
-}
-
-.grayDot {
-	display: inline-block;
-	height: 5px;
-	width: 5px;
-	border-radius: 50%;
-	background: #999999;
-	margin: 0 2px 2px 0;
+.dotSize {
+	width: 7px;
 }
 
 .gridFontSize {
@@ -42,17 +28,4 @@ ion-col {
 .badgeColor {
 	background: #fff;
 	color: #222;
-}
-
-.iconPadding {
-	margin-right: 10px;
-	width: 15px;
-}
-
-.fontInBottom {
-	font-size: 0.85em;
-}
-
-ion-button, ion-card, ion-toolbar {
-	outline: none;
 }
