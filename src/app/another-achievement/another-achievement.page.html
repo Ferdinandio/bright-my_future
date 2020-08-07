@@ -25,7 +25,7 @@
     </ion-select>
   </ion-item>
   <ion-card>
-    <ion-item lines="none">
+    <ion-item>
       <ion-card-header>
         <ion-card-subtitle>
           Вводный курс для муниципальных координаторов программ наставничества молодёжи в ТСЖ
@@ -34,7 +34,102 @@
           <small>Средний балл 0</small>
         </ion-text>
       </ion-card-header>
-      <ion-icon class="chevron" size="large" name="chevron-down-outline"></ion-icon>
+      <ion-icon class="chevron" size="large" name="chevron-up-outline"></ion-icon>
+    </ion-item>
+    <ion-grid class="gridFontSize">
+      <ion-row>
+        <ion-col>
+          <ion-text>
+            <b>Этап</b>
+          </ion-text>
+        </ion-col>
+        <ion-col>
+          <ion-text>
+            <b>Ознакомление</b>
+          </ion-text>
+        </ion-col>
+        <ion-col>
+          <ion-text>
+            <b>Тест</b>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row class="tabelBackgroundPlusMarginB">
+        <ion-col>
+          <ion-text>
+            О программе
+          </ion-text>
+        </ion-col>
+        <ion-col>
+          <div>
+            <span class="greenDot"></span>
+            <ion-text color="medium">
+              Изучено
+            </ion-text>
+          </div>
+          <div>
+            <ion-text class="relearn">
+              Изучить заново
+            </ion-text>
+          </div>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row class="tabelBackgroundPlusMarginB">
+        <ion-col>
+          <ion-text>
+            Концепция наставничества
+          </ion-text>
+        </ion-col>
+        <ion-col>
+          <div>
+            <span class="greenDot"></span>
+            <ion-text color="medium">
+              Изучено
+            </ion-text>
+          </div>
+          <div>
+            <ion-text class="relearn">
+              Изучить заново
+            </ion-text>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <span class="grayDot"></span>
+            <ion-text color="medium">
+              Проверка
+            </ion-text>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-item lines="none">
+      <ion-label>
+        <ion-icon class="iconPadding" size="small" slot="start" name="stats-chart"></ion-icon>
+        <ion-text class="fontInBottom" color="medium">
+          <small>Процент ознакомления</small>
+        </ion-text>
+      </ion-label>
+      <ion-badge class="badgeColor" fill="clear" slot="end">100</ion-badge>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        <ion-icon class="iconPadding" size="small" slot="start" name="layers"></ion-icon>
+        <ion-text class="fontInBottom" color="medium">
+          <small>Пройдено тестов, %</small>
+        </ion-text>
+      </ion-label>
+      <ion-badge class="badgeColor" fill="clear" slot="end">0</ion-badge>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        <ion-icon class="iconPadding" size="small" slot="start" name="bar-chart"></ion-icon>
+        <ion-text class="fontInBottom" color="medium">
+          <small>Среднее число попыток сдачи</small>
+        </ion-text>
+      </ion-label>
+      <ion-badge class="badgeColor" fill="clear" slot="end">3</ion-badge>
     </ion-item>
   </ion-card>
 </ion-content>

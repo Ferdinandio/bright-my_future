@@ -8,20 +8,18 @@
 .logoWrapper {
 	width: 100px;
 	height: 100px;
-	background: #ccc;
 }
 
 ion-button {
 	box-sizing: content-box;
 	padding: 0 16px;
-	outline: none;
 }
 
 .iconBtn {
 	transform: translateX(90px);
 }
 
-form {
+.form {
 	position: absolute;
 	bottom: 0;
 }

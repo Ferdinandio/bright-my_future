@@ -11,3 +11,53 @@ ion-button, ion-card, ion-toolbar {
 ion-select {
 	font-size: medium;
 }
+
+.tabelBackgroundPlusMarginB {
+	background: #eee;
+	margin-bottom: 5px;
+}
+
+.greenDot {
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background: #1a921a;
+	margin: 0 2px 2px 0;
+}
+
+.grayDot {
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background: #999999;
+	margin: 0 2px 2px 0;
+}
+
+.gridFontSize {
+	font-size: 0.85em;
+}
+
+.relearn {
+	font-size: 0.9em;
+}
+
+ion-col {
+	max-width: 33.5%;
+	white-space: pre-line;
+}
+
+.badgeColor {
+	background: #fff;
+	color: #222;
+}
+
+.iconPadding {
+	margin-right: 10px;
+	width: 15px;
+}
+
+.fontInBottom {
+	font-size: 0.85em;
+}
