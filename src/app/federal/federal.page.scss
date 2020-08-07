@@ -1,4 +1,6 @@
-
+ion-button::part(native) {
+	box-shadow: none;
+}
 
 ion-button {
 	outline: none;
