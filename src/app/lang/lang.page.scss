@@ -26,20 +26,14 @@ h2 {
 	text-align: center;
 }
 
-p {
-	left: 0;
-	right: 0;
+.centerText {
+	display: flex;
+	justify-content: center;
 	margin: 0 auto 16px;
-	text-align: center;
 }
 
 .bottom {
 	position: absolute;
 	bottom: 0;
 	width: 85%;
-}
-
-ion-button {
-	height: 70px;
-	outline: none;
 }

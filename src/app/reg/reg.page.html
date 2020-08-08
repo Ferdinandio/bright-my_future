@@ -7,34 +7,38 @@
 </ion-header>
 
 <ion-content>
-  <form>
-    <ion-list>
-      <ion-item>
-        <ion-input type="email" placeholder="E-mail"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input type="password" placeholder="Пароль"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input type="password" placeholder="Повторите пароль"></ion-input>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label>
-          <p>
-            Соглашаюсь с <a routerLink="/agreement">условиями</a>
-          </p>
-        </ion-label>
-        <ion-checkbox slot="start"></ion-checkbox>
-      </ion-item>
-      <ion-item lines="none">
-        <ion-label><p>Подтверждаю, что являюсь лицом старше 14 лет</p></ion-label>
-        <ion-checkbox slot="start"></ion-checkbox>
-      </ion-item>
-    </ion-list>
-  </form>
+  <ion-list>
+    <ion-item>
+      <ion-input type="email" placeholder="E-mail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Пароль"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Повторите пароль"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        <p>
+          Соглашаюсь с <a routerLink="/agreement">условиями</a>
+        </p>
+      </ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        <p>Подтверждаю, что являюсь лицом старше 14 лет</p>
+      </ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
 </ion-content>
 
 <ion-footer>
-  <ion-button routerLink="/auth" class="ion-no-padding" shape="round" expand="block" class="ion-padding">Зарегистрироваться</ion-button>
-  <ion-button routerLink="/auth" expand="block" class="ion-padding" fill="clear">Отмена</ion-button>
+  <ion-button routerLink="/auth" shape="round" expand="block">
+    Зарегистрироваться
+  </ion-button>
+  <ion-button routerLink="/auth" expand="block" fill="clear">
+    Отмена
+  </ion-button>
 </ion-footer>

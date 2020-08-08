@@ -3,7 +3,7 @@
     <ion-title class="ion-text-center ion-no-padding">
       Ожидание регистрации
     </ion-title>
-    
+
     <ion-buttons slot="start">
       <ion-button routerLink="/menu">
         <ion-icon color="dark" size="large" name="reorder-three-outline"></ion-icon>
@@ -13,16 +13,23 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-img src="../../assets/icon/favicon.png"></ion-img>
-  <ion-text class="ion-text-center">
-    <h4>Ваш номер пользователя: 345</h4>
-  </ion-text>
-  <ion-text class="ion-text-center">
-    <p>
-      Если вы уже приобрели курс или хотите подробнее узнать о регистрации и покупке курсов. Вы можете написать в тех поддержку.
-    </p>
-  </ion-text>
-  
-  <ion-button routerLink="/learn-material" shape="round" expand="block" class="ion-no-padding">Ознакомиться с курсами</ion-button>
-  <ion-button routerLink="/menu/chat/chatting" expand="block" class="ion-padding" fill="clear">Написать в техподдержку</ion-button>
+  <ion-list>
+    <ion-img src="../../assets/icon/favicon.png"></ion-img>
+
+    <ion-text class="label ion-text-center">
+      <h4>Ваш номер пользователя: 345</h4>
+    </ion-text>
+
+    <ion-label class="label ion-text-center ion-padding">
+      Если вы уже приобрели курс или хотите подробнее узнать о регистрации и покупке курсов. Вы можете написать в тех
+      поддержку.
+    </ion-label>
+
+    <ion-button routerLink="/learn-material" shape="round" expand="block">
+      Ознакомиться с курсами
+    </ion-button>
+    <ion-button routerLink="/menu/chat/chatting" expand="block" fill="clear">
+      Написать в техподдержку
+    </ion-button>
+  </ion-list>
 </ion-content>

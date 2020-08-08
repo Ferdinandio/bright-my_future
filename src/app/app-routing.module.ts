@@ -3,10 +3,6 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
     redirectTo: 'lang',
     pathMatch: 'full'
@@ -157,10 +153,6 @@ const routes: Routes = [
   {
     path: 'common-chatting',
     loadChildren: () => import('./common-chatting/common-chatting.module').then( m => m.CommonChattingPageModule)
-  },
-  {
-    path: 'choose-contact',
-    loadChildren: () => import('./choose-contact/choose-contact.module').then( m => m.ChooseContactPageModule)
   },
   {
     path: 'achievements',
