@@ -6,6 +6,7 @@
     
     <ion-buttons slot="start">
       <ion-button routerLink="/menu">
+        <ion-modal></ion-modal>
         <ion-icon color="dark" size="large" name="reorder-three-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -13,7 +14,7 @@
 </ion-header>
 
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-  <ion-fab-button>
+  <ion-fab-button (click)="presentModal()">
     <ion-icon name="add"></ion-icon>
   </ion-fab-button>
 </ion-fab>
