@@ -14,3 +14,11 @@ ion-title, ion-grid, ion-row, ion-col {
 ion-text {
 	font-size: 14px;
 }
+
+.my-custom-class .modal-wrapper {
+	width: 90%;
+	height: 30%;
+	position: absolute;
+	border-radius: 6px;
+	top: 15px;
+}

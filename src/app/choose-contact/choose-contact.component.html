@@ -1,23 +1,56 @@
-<div>
-  <div>
-    <div>
-      <span>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
         Новый диалог
-      </span>
-      <button (click)="dismiss()">
-        Close
-      </button>
-    </div>
-    <div>
-      <span>
-        <img src="../../assets/icon/favicon.png">
-      </span>
-      <span class="ion-padding-horizontal">
-        <div>Техподдержка 1</div>
-        <div class="smallFont">
-          <div>Сервис</div>
-        </div>
-      </span>
-    </div>
-  </div>
-</div>
+      </ion-label>
+      <ion-button (click)="dismiss()" fill="clear">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-avatar>
+        <ion-img src="../../assets/icon/favicon.png"></ion-img>
+      </ion-avatar>
+      <ion-label class="ion-padding-horizontal">
+        Техподдержка 1
+        <p class="smallFont">
+          Сервис
+        </p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar>
+        <ion-img src="../../assets/icon/favicon.png"></ion-img>
+      </ion-avatar>
+      <ion-label class="ion-padding-horizontal">
+        Ментор тестовый
+        <p class="smallFont">
+          Наставник
+        </p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar>
+        <ion-img src="../../assets/icon/favicon.png"></ion-img>
+      </ion-avatar>
+      <ion-label class="ion-padding-horizontal">
+        Техподдержка 1
+        <p class="smallFont">
+          Сервис
+        </p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar>
+        <ion-img src="../../assets/icon/favicon.png"></ion-img>
+      </ion-avatar>
+      <ion-label class="ion-padding-horizontal">
+        Ментор тестовый
+        <p class="smallFont">
+          Наставник
+        </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

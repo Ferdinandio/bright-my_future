@@ -13,12 +13,7 @@ export class ChatPage {
   async presentModal() {
     const modal = await this.modalController.create({
       component: ChooseContactComponent,
-      cssClass: 'my-custom-class',
-      componentProps: {
-        'firstName': 'Douglas',
-        'lastName': 'Adams',
-        'middleInitial': 'N'
-      }
+      cssClass: 'my-custom-class'
     });
     return await modal.present();
   }

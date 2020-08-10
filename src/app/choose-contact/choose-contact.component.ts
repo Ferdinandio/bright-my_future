@@ -7,12 +7,12 @@ import { ModalController } from '@ionic/angular';
   templateUrl: './choose-contact.component.html',
   styleUrls: ['./choose-contact.component.scss']
 })
+
 export class ChooseContactComponent {
 
   constructor(public viewCtrl: ModalController) { }
 
   dismiss() {
-this.viewCtrl.dismiss();
-}
-
+    this.viewCtrl.dismiss();
+  }
 }
