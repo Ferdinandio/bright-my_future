@@ -1,0 +1,37 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      Получение доступа к методике Берга
+    </ion-title>
+    
+    <ion-buttons slot="start">
+      <ion-button routerLink="/menu">
+        <ion-icon color="dark" size="large" name="reorder-three-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <div class="pre-wrap ion-text-center">
+          Для получения доступа необходимо ввести промо-код или оплатить доступ
+        </div>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Введите промо-код"></ion-input>
+      <ion-button routerLink="/menu/prog-passports/prog-overview" fill="clear">Применить</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Цена - 1000 рублей
+      </ion-label>
+    </ion-item>
+    <ion-button routerLink="/prog-acquiring" class="ion-margin" shape="round"expand="block">
+      Купить
+    </ion-button>
+  </ion-list>
+</ion-content>

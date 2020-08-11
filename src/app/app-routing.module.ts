@@ -67,6 +67,41 @@ const routes: Routes = [
             loadChildren: () => import('./create-event/create-event.module').then( m => m.CreateEventPageModule)
           }
         ]
+      },
+      {
+        path: 'prog-passports',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('./prog-passports/prog-passports.module').then( m => m.ProgPassportsPageModule)
+          },
+          {
+            path: 'prog-overview',
+            children: [
+              {
+                path: '',
+            loadChildren: () => import('./prog-overview/prog-overview.module').then( m => m.ProgOverviewPageModule)
+              },
+              {
+                path: 'prog-success',
+                loadChildren: () => import('./prog-success/prog-success.module').then( m => m.ProgSuccessPageModule)
+              }
+            ]
+          }
+        ]
+      },
+      {
+        path: 'diplomas',
+        children: [
+          {
+            path: '',
+        loadChildren: () => import('./diplomas/diplomas.module').then( m => m.DiplomasPageModule)
+          },
+          {
+            path: 'diploma-overview',
+            loadChildren: () => import('./diploma-overview/diploma-overview.module').then( m => m.DiplomaOverviewPageModule)
+          }
+        ]
       }
     ]
   },
@@ -178,6 +213,47 @@ const routes: Routes = [
   {
     path: 'another-achievement',
     loadChildren: () => import('./another-achievement/another-achievement.module').then( m => m.AnotherAchievementPageModule)
+  },
+  {
+    path: 'prog-passports',
+    loadChildren: () => import('./prog-passports/prog-passports.module').then( m => m.ProgPassportsPageModule)
+  },
+  {
+    path: 'prog-overview',
+    loadChildren: () => import('./prog-overview/prog-overview.module').then( m => m.ProgOverviewPageModule)
+  },
+  {
+    path: 'prog-success',
+    loadChildren: () => import('./prog-success/prog-success.module').then( m => m.ProgSuccessPageModule)
+  },
+  {
+    path: 'prog-acquiring',
+    loadChildren: () => import('./prog-acquiring/prog-acquiring.module').then( m => m.ProgAcquiringPageModule)
+  },
+  {
+    path: 'mentor-participation',
+    children: [
+      {
+        path: '',
+    loadChildren: () => import('./mentor-participation/mentor-participation.module').then( m => m.MentorParticipationPageModule)
+      },
+      {
+        path: 'mentor-certificate',
+        loadChildren: () => import('./mentor-certificate/mentor-certificate.module').then( m => m.MentorCertificatePageModule)
+      }
+    ]
+  },
+  {
+    path: 'mentor-certificate',
+    loadChildren: () => import('./mentor-certificate/mentor-certificate.module').then( m => m.MentorCertificatePageModule)
+  },
+  {
+    path: 'diplomas',
+    loadChildren: () => import('./diplomas/diplomas.module').then( m => m.DiplomasPageModule)
+  },
+  {
+    path: 'diploma-overview',
+    loadChildren: () => import('./diploma-overview/diploma-overview.module').then( m => m.DiplomaOverviewPageModule)
   },
 ];
 
