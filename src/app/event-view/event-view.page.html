@@ -1,0 +1,44 @@
+<ion-content mode="ios">
+  <ion-toolbar>
+    <ion-label class="ion-padding-horizontal">24 Августа, 2020</ion-label>
+    <ion-button routerLink="/menu/calendar" size="small" slot="end" fill="clear">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+
+  <ion-card>
+    <ion-item lines="full">
+      <ion-label>
+        <ion-text class="head-card">Ярмарка учебников</ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label>
+        <ion-text class="block">
+          <ion-icon color="medium" name="timer-outline"></ion-icon>
+          10:00 - 12:00
+        </ion-text>
+        <ion-text class="block">
+          <ion-icon color="medium" name="location-outline"></ion-icon>
+          Школьный стадион
+        </ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label class="ion-no-margin">
+        <ion-text class="pre-wrap" color="medium">Закупка учебниками на предстоящий учебный год</ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  
+  <ion-item class="bottom-btns" lines="none">
+    <ion-button class="btn" size="default" shape="round" fill="outline">Редактировать</ion-button>
+    <ion-button routerLink="/menu/calendar" class="btn" size="default" shape="round">Удалить</ion-button>
+  </ion-item>
+  
+  <ion-item class="bottom" lines="none">
+    <ion-label class="bgr-bottom ion-padding-horizontal ion-no-margin">
+      <ion-text class="pre-wrap" color="medium">Наставляемый ещё не принял решение об&nbsp;участии</ion-text>
+    </ion-label>
+  </ion-item>
+</ion-content>

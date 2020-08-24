@@ -65,6 +65,10 @@ const routes: Routes = [
           {
             path: 'create-event',
             loadChildren: () => import('./create-event/create-event.module').then( m => m.CreateEventPageModule)
+          },
+          {
+            path: 'event-view',
+            loadChildren: () => import('./event-view/event-view.module').then( m => m.EventViewPageModule)
           }
         ]
       },
@@ -159,7 +163,25 @@ const routes: Routes = [
           },
           {
             path: 'testing',
-            loadChildren: () => import('./testing/testing.module').then( m => m.TestingPageModule)
+            children: [
+              {
+                path: '',
+                loadChildren: () => import('./testing/testing.module').then( m => m.TestingPageModule)
+              },
+              {
+                path: 'testing-further',
+                children: [
+                  {
+                    path: '',
+                    loadChildren: () => import('./testing-further/testing-further.module').then( m => m.TestingFurtherPageModule)
+                  },
+                  {
+                    path: 'testing-answer',
+                    loadChildren: () => import('./testing-answer/testing-answer.module').then( m => m.TestingAnswerPageModule)
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
@@ -254,6 +276,18 @@ const routes: Routes = [
   {
     path: 'diploma-overview',
     loadChildren: () => import('./diploma-overview/diploma-overview.module').then( m => m.DiplomaOverviewPageModule)
+  },
+  {
+    path: 'event-view',
+    loadChildren: () => import('./event-view/event-view.module').then( m => m.EventViewPageModule)
+  },
+  {
+    path: 'testing-further',
+    loadChildren: () => import('./testing-further/testing-further.module').then( m => m.TestingFurtherPageModule)
+  },
+  {
+    path: 'testing-answer',
+    loadChildren: () => import('./testing-answer/testing-answer.module').then( m => m.TestingAnswerPageModule)
   },
 ];
 
